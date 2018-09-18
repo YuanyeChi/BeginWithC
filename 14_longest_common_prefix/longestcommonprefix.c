@@ -1,3 +1,4 @@
+#include <stdlib.h>
 char* longestCommonPrefix(char** strs, int strsSize) {
 	int i, count = 0;
 	char *result = malloc(1000);

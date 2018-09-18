@@ -1,5 +1,7 @@
-int* sum(int* num, int numsize, int target){
-	int *a = (int*)malloc(2*sizeof(int));
+#include <stdlib.h>
+#include <stdio.h>
+int *sum(int *nums, int numsSize, int target){
+	int *a = (int*)malloc(2 * sizeof(int));
 	for(int i = 0; i < numsSize;i++)
 	{
 		for(int j = i+1; (j < numsSize && j != i);j++)
@@ -12,4 +14,5 @@ int* sum(int* num, int numsize, int target){
 		}
 	}
 	return a;
+	free(a);
 }
